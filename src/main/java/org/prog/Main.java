@@ -60,15 +60,16 @@ public class Main {
         car.goTo("Dnipro", "Chernihiv");
         car.goTo("Kyiv", "Kharkiv", "Poltava");
         car.goTo("Odessa", "Kyiv", "Dnipro", "food");
+        car.goTo("Odessa", "Kyiv", "Uman", "alcohol", "Epicentr");
 
     }
 
-    public static void paintCar(Car car) {
-        car.color = "black";
-    }
-
-    public static void followTheRoute(ITurnable iCar) {
-        iCar.turnLeft();
-        iCar.turnRight();
-    }
+//    public static void paintCar(Car car) {
+//        car.color = "black";
+//    }
+//
+//    public static void followTheRoute(ITurnable iCar) {
+//        iCar.turnLeft();
+//        iCar.turnRight();
+//    }
 }
