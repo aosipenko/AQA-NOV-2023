@@ -48,18 +48,23 @@ public class Main {
 
 //        myCar.drive();
 //        bigCar.drive();
-//        electricCar.drive();
+//        electricCar.drive();.
 
 //        followTheRoute(myCar);
 //        followTheRoute(telega);
 //        followTheRoute(truck);
 //        followTheRoute(bigTruck);
 
-        Car car = new Car();
-        car.goTo("Lviv");
-        car.goTo("Dnipro", "Chernihiv");
-        car.goTo("Kyiv", "Kharkiv", "Poltava");
-        car.goTo("Odessa", "Kyiv", "Dnipro", "food");
+     Car car = new Car();
+     car.goTo("Lviv");
+     car.goTo("Dnipro", "Chernihiv");
+     car.goTo("Kyiv", "Kharkiv", "Poltava");
+     car.goTo("Odessa", "Kyiv", "Dnipro", "food");
+     car.goTo("Odessa", "Kyiv", "Dnipro", "food", "Lviv");
+
+        SportElectricCar sportCar = new SportElectricCar();
+        sportCar.moveBackward();
+        sportCar.moveForward();
 
     }
 
@@ -70,5 +75,10 @@ public class Main {
     public static void followTheRoute(ITurnable iCar) {
         iCar.turnLeft();
         iCar.turnRight();
+    }
+
+    public static void followTehRoute (IMovable SportElectricCar) {
+        SportElectricCar.moveBackward();
+        SportElectricCar.moveForward();
     }
 }

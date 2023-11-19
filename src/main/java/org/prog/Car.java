@@ -36,9 +36,14 @@ public class Car implements ITurnable {
         goTo(city, fromCity, passingThrough, "empty");
     }
 
+
+
     //TODO: overload this this method: add return destination
     public void goTo(String city, String fromCity, String passingThrough, String withCargo) {
         System.out.println("This vehicle goes to " + city + " from " + fromCity +
                 " passing through " + passingThrough + " with " + withCargo + " cargo");
     }
+    public void goTo(String city, String fromCity, String passingThrough, String withCargo, String returnDestination) {
+        System.out.println("This vehicle goes to " + city + " from " + fromCity +
+                " passing through " + passingThrough + " with " + withCargo + " cargo" + " after go to " + returnDestination );}
 }
