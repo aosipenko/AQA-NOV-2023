@@ -1,24 +1,5 @@
 package org.prog;
-
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStream;
-
 public class Main {
-
-    /**
-     * ##################################
-     * ##################################
-     * #####redCar#######################
-     * ##################################
-     * ##################################
-     * ##################################
-     * ################yellowCar#########
-     * ##################################
-     * ##################################
-     *
-     * @param args
-     */
 
     public static void main(String[] args) {
 //        CarService carService = new CarService();
@@ -38,29 +19,31 @@ public class Main {
 //        carService.paintCar(yellowCar);
 //        System.out.println(yellowCar.color);
 
-//        Car myCar = new Car();
-//        BigCar bigCar = new BigCar();
-//        ElectricCar electricCar = new ElectricCar();
-//        Telega telega = new Telega();
-//        BigTruck bigTruck = new BigTruck();
-//
-//        Truck truck = new Truck();
+        Car myCar = new Car();
+        BigCar bigCar = new BigCar();
+        ElectricCar electricCar = new ElectricCar();
+        Telega telega = new Telega();
+        BigTruck bigTruck = new BigTruck();
+        Truck truck = new Truck();
+        ElectricTruck electricTruck = new ElectricTruck();
 
 //        myCar.drive();
 //        bigCar.drive();
 //        electricCar.drive();
 
-//        followTheRoute(myCar);
-//        followTheRoute(telega);
-//        followTheRoute(truck);
-//        followTheRoute(bigTruck);
+        followTheRoute(myCar);
+        followTheRoute(telega);
+        followTheRoute(truck);
+        followTheRoute(bigTruck);
+        followTheRoute(electricTruck);
+        followTheRoute2(electricTruck);
 
         Car car = new Car();
         car.goTo("Lviv");
         car.goTo("Dnipro", "Chernihiv");
         car.goTo("Kyiv", "Kharkiv", "Poltava");
         car.goTo("Odessa", "Kyiv", "Dnipro", "food");
-
+        car.goTo("Odessa", "Kyiv", "Dnipro", "food", "return");
     }
 
     public static void paintCar(Car car) {
@@ -70,5 +53,9 @@ public class Main {
     public static void followTheRoute(ITurnable iCar) {
         iCar.turnLeft();
         iCar.turnRight();
+    }
+    public static void followTheRoute2(IMovable iCar) {
+        iCar.moveForward();
+        iCar.moveBackward();
     }
 }
