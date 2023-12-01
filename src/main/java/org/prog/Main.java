@@ -21,6 +21,7 @@ public class Main {
      */
 
     public static void main(String[] args) {
+/*
         String s = "s";
         String s1 = "";
         String s2 = null;
@@ -28,6 +29,7 @@ public class Main {
         System.out.println(s.length());
         System.out.println(s1.length());
         System.out.println(s2.length());
+*/
 
 //        Car car = new Car();
 //        car.smth();
@@ -35,20 +37,24 @@ public class Main {
 //        car.goTo("Dnipro", "Chernihiv");
 //        car.goTo("Kyiv", "Kharkiv", "Poltava");
 //        car.goTo("Odessa", "Kyiv", "Dnipro", "food");
-    }
+
 
         Car car = new Car();
-        car.goTo("Lviv");
+        car.printColorlength();
+
+/*        car.goTo("Lviv");
         car.goTo("Dnipro", "Chernihiv");
         car.goTo("Kyiv", "Kharkiv", "Poltava");
         car.goTo("Odessa", "Kyiv", "Dnipro", "food");
         car.goTo("Odessa", "Kyiv", "Uman", "alcohol", "Epicentr");
-    private static void increment(Integer input){
-        input += 1000;
-        System.out.println(input);
-    }
 
-    }
+ */
+
+//        private static void increment (Integer input){
+//            input += 1000;
+//            System.out.println(input);
+//        }
+
 
 //    public static void paintCar(Car car) {
 //        car.color = "black";
@@ -58,4 +64,6 @@ public class Main {
 //        iCar.turnLeft();
 //        iCar.turnRight();
 //    }
+
+    }
 }

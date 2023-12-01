@@ -12,8 +12,17 @@ public class Car implements ITurnable {
 
     //TODO: call this method when there is not color set, and intercept exception that occurs
     //TODO: in same block in finally set car color to some value
+
+
     public void printColorlength() {
-        System.out.println(color.length());
+        try {
+            System.out.println(color.length());
+        } catch (RuntimeException e) {
+            System.out.println("Something went wrong! Because the color value is empty!");
+        } finally {
+            color = "purple";
+            System.out.println("Legth of new color is " + color.length() + " symbols");
+        }
     }
 
     private void switchGear() {
