@@ -19,15 +19,15 @@ public class SeleniumHomeWork4 {
             driver.get("https://www.amazon.com/");
 
             WebElement searchInput = driver.findElement(By.name("field-keywords"));
-            searchInput.sendKeys("iphone 15 ");
+            searchInput.sendKeys("iPhone 15 Pro");
             searchInput.sendKeys(Keys.ENTER);
 
             List<WebElement> searchHeaders = new WebDriverWait(driver, Duration.ofSeconds(30L))
                     .until(ExpectedConditions.numberOfElementsToBeMoreThan(
-                            By.xpath("//span[contains(text(), 'iphone 15')]"), 3));
+                            By.xpath("//span[contains(text(), 'iPhone 15 Pro')]"), 3));
 
             if (searchHeaders.size() >= 3) {
-                System.out.println("iphone 15 is found!");
+                System.out.println("iPhone 15 Pro is found!");
             }
         } finally {
             if (driver != null) {
