@@ -1,4 +1,4 @@
-package org.prog.page;
+package org.prog.web.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
