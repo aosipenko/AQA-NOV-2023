@@ -13,7 +13,14 @@ public class Car implements ITurnable {
     //TODO: call this method when there is not color set, and intercept exception that occurs
     //TODO: in same block in finally set car color to some value
     public void printColorlength() {
-        System.out.println(color.length());
+        try {
+            System.out.println(color.length());
+        } catch (RuntimeException e) {
+            System.out.println("Ups, помилка. Колір машини відсутній!");
+        } finally {
+            color = "Червоний";
+            System.out.println("Колір машини: " + color.length()+" simbols");
+        }
     }
 
     private void switchGear() {
