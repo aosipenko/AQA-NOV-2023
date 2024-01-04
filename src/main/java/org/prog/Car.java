@@ -2,7 +2,7 @@ package org.prog;
 
 public class Car implements ITurnable {
 
-    public String color = null;
+    public String color;
     public String engineVolume;
 
     public void drive() {
@@ -47,6 +47,9 @@ public class Car implements ITurnable {
         System.out.println("This vehicle goes to " + city + " from " + fromCity +
                 " passing through " + passingThrough + " with " + withCargo + " cargo");
     }
+    public void goTo(String city, String fromCity, String passingThrough, String withCargo, String returnDestination) {
+        System.out.println("This vehicle goes to " + city + " from " + fromCity +
+                " passing through " + passingThrough + " with " + withCargo + " cargo" + " after go to " + returnDestination );}
 
     @Override
     public boolean equals(Object obj) {

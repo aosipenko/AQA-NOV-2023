@@ -21,13 +21,34 @@ public class Main {
      */
 
     public static void main(String[] args) {
-        String s = "s";
-        String s1 = "";
-        String s2 = null;
+//        CarService carService = new CarService();
+//
+//        Car redCar = new Car();
+//        Car yellowCar = new Car();
+//
+//        redCar.color = "red";
+//        yellowCar.color = "yellow";
+//        System.out.println(redCar.color);
+//        System.out.println(yellowCar.color);
+//
+//        Car thatCar = redCar;
+//        System.out.println(thatCar.color);
+//        paintCar(thatCar);
+//        System.out.println(">>>>>>" + redCar.color);
+//        carService.paintCar(yellowCar);
+//        System.out.println(yellowCar.color);
 
-        System.out.println(s.length());
-        System.out.println(s1.length());
-        System.out.println(s2.length());
+//        Car myCar = new Car();
+//        BigCar bigCar = new BigCar();
+//        ElectricCar electricCar = new ElectricCar();
+//        Telega telega = new Telega();
+//        BigTruck bigTruck = new BigTruck();
+//
+//        Truck truck = new Truck();
+
+//        myCar.drive();
+//        bigCar.drive();
+//        electricCar.drive();.
 
 //        Car car = new Car();
 //        car.smth();
@@ -37,11 +58,6 @@ public class Main {
 //        car.goTo("Odessa", "Kyiv", "Dnipro", "food");
     }
 
-    private static void increment(Integer input){
-        input += 1000;
-        System.out.println(input);
-    }
-
     public static void paintCar(Car car) {
         car.color = "black";
     }
@@ -49,5 +65,10 @@ public class Main {
     public static void followTheRoute(ITurnable iCar) {
         iCar.turnLeft();
         iCar.turnRight();
+    }
+
+    public static void followTehRoute (IMovable SportElectricCar) {
+        SportElectricCar.moveBackward();
+        SportElectricCar.moveForward();
     }
 }

@@ -8,3 +8,4 @@ public interface ITurnable {
 
     void turnRight();
 }
+
